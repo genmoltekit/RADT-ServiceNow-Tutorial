@@ -11,22 +11,42 @@ Script Includes can be either Server-Side only.. (DEFAULT).. or  can additionall
         <script><![CDATA[function myScriptIncludeLogger (textToLog) {
 	//The name of the function is critical to match here and in the 'name' field directly abov!!
 	
-    gs.addInfoMessage("#3 myScriptIncludeLogger: You can use the built-in jslog function to log something like: " + textToLog);
-	jslog ( "#4 myScriptIncludeLogger: Using the built-in jslog() function to log something: " + textToLog);
-	//hello comment
+    gs.addInfoMessage("#3 myScriptIncludeLogger: You can use gs.addInfoMesssage from ScriptIncludes to log the incoming argument such as: " + textToLog);
+	//jslog ( "#4 myScriptIncludeLogger: Using the built-in jslog() function to log something: " + textToLog);
+	//Script Includes are ALWAYS Server Side!!   
+	//https://docs.servicenow.com/bundle/kingston-application-development/page/script/debugging/concept/c_WritingToTheDebugLog.html
+	
+	//gs.log("#4 myScriptIncludeLogger: Using the built-in gs.log() function to log something: " + textToLog);
+	//NO this fails with message: Function log is not allowed in scope x_237223_radt_intr. Use gs.debug() or gs.info() instead
+	
+	//gs.debug("#4 myScriptIncludeLogger: Using the built-in gs.log() function to log something: " + textToLog);
+	//No obvious Error but not showing up in any of the more obvious System Log Locations...
+	//https://docs.servicenow.com/bundle/kingston-application-development/page/script/business-rules/reference/r_DebuggingBusinessRules.html
+	// Although technically, this Script Include isnt a Business Rule.. But both are Server Side.
+
+	//****************************************************************
+	//**  Details About Scoped Logging for Script Includes ets:
+	//**  https://developer.servicenow.com/app.do#!/document/content/app_store_doc_scoped_script_kingston_c_ScopedScriptLogging?v=kingston
+	//
+	//==> To enable session debug logging, click Enable Session Debug under UI Actions; or click Disable Session Debug to turn it off.
+	//
+	//****************************************************************
+	
+	
+	
 }
 ]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-06-11 15:58:08</sys_created_on>
         <sys_id>528b640fdb22130044b085184b9619c9</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>18</sys_mod_count>
         <sys_name>myScriptIncludeLogger</sys_name>
         <sys_package display_value="RADT Introduction to Service Now" source="x_237223_radt_intr">d478640bdb22130044b085184b96192a</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="RADT Introduction to Service Now">d478640bdb22130044b085184b96192a</sys_scope>
         <sys_update_name>sys_script_include_528b640fdb22130044b085184b9619c9</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-06-11 17:14:30</sys_updated_on>
+        <sys_updated_on>2018-07-11 11:29:41</sys_updated_on>
     </sys_script_include>
 </record_update>
