@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="weapons_ready" label="Weapons Ready" language="en" table="x_237223_radt_intr_radt_demo_table_game_engine">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>weapons_ready</element>
+            <help/>
+            <hint/>
+            <label>Weapons Ready</label>
+            <language>en</language>
+            <name>x_237223_radt_intr_radt_demo_table_game_engine</name>
+            <plural>Weapons Readies</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-07-13 18:40:22</sys_created_on>
+            <sys_id>cc844e1ddbd313007b075385ca96192b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Weapons Ready</sys_name>
+            <sys_package display_value="RADT Introduction to Service Now" source="x_237223_radt_intr">d478640bdb22130044b085184b96192a</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="RADT Introduction to Service Now">d478640bdb22130044b085184b96192a</sys_scope>
+            <sys_update_name>sys_documentation_x_237223_radt_intr_radt_demo_table_game_engine_weapons_ready_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-07-13 18:40:22</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

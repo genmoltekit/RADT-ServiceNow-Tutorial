@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="RADT DEMO TABLE PLAYERS" max_length="40" name="x_237223_radt_intr_radt_demo_table_players" type="collection">
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element default="100" label="Player Health" max_length="20" name="player_health" type="integer"/>
+        <element default="0" label="Player Location" max_length="20" name="player_location" type="integer"/>
+        <element default="null" label="Player Name" max_length="20" name="player_name" type="string"/>
+        <element default="true" label="Player Ready" max_length="40" name="player_ready" type="boolean"/>
+    </element>
+</database>

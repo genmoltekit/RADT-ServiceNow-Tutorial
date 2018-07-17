@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="RADT Introduction to SubFlows" max_length="40" name="x_237223_radt_intr_radt_introduction_to_subflows" type="collection">
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element default="-1" label="ParentFlowInteger" max_length="40" name="parentflowinteger" type="integer"/>
+        <element default="null" label="ParentFlowString" max_length="20" name="parentflowstring" type="string"/>
+        <element label="ParentFlowTrueFalse" max_length="40" name="parentflowtruefalse" type="boolean"/>
+        <element default="-1" label="SubFlowInteger" max_length="40" name="subflowinteger" type="integer"/>
+        <element default="null" label="SubFlowString" max_length="20" name="subflowstring" type="string"/>
+        <element display="true" label="SubFlowTrueFalse" max_length="40" name="subflowtruefalse" type="boolean"/>
+    </element>
+</database>
