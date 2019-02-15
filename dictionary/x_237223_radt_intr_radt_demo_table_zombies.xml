@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="RADT DEMO TABLE ZOMBIES" max_length="40" name="x_237223_radt_intr_radt_demo_table_zombies" type="collection">
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element default="100" label="Zombie Health" max_length="40" name="zombie_health" type="integer"/>
+        <element default="100" label="Zombie Location" max_length="40" name="zombie_location" type="integer"/>
+        <element label="Zombie Ready" max_length="40" name="zombie_ready" type="boolean"/>
+    </element>
+</database>

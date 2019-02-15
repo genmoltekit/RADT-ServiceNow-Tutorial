@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="weapon_ammo_count" label="Weapon Ammo Count" language="en" table="x_237223_radt_intr_radt_demo_table_weapons">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>weapon_ammo_count</element>
+            <help/>
+            <hint/>
+            <label>Weapon Ammo Count</label>
+            <language>en</language>
+            <name>x_237223_radt_intr_radt_demo_table_weapons</name>
+            <plural>Weapon Ammo Counts</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-07-13 18:01:10</sys_created_on>
+            <sys_id>398b79d5dbd313007b075385ca961959</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Weapon Ammo Count</sys_name>
+            <sys_package display_value="RADT Introduction to Service Now" source="x_237223_radt_intr">d478640bdb22130044b085184b96192a</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="RADT Introduction to Service Now">d478640bdb22130044b085184b96192a</sys_scope>
+            <sys_update_name>sys_documentation_x_237223_radt_intr_radt_demo_table_weapons_weapon_ammo_count_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-07-13 18:01:10</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

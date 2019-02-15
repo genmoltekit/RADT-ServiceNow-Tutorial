@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="RADT DEMO TABLE GAME ENGINE" max_length="40" name="x_237223_radt_intr_radt_demo_table_game_engine" type="collection">
+        <element label="Game Over" max_length="40" name="game_over" type="boolean"/>
+        <element label="Game Ready" max_length="40" name="game_ready" type="boolean"/>
+        <element default="10" label="Max Rounds" max_length="40" name="max_rounds" read_only="true" type="integer"/>
+        <element default="true" label="Player Alive" max_length="40" name="player_alive" type="boolean"/>
+        <element default="10" label="Player Detection Distance" max_length="40" name="player_detection_distance" read_only="true" type="integer"/>
+        <element default="0" label="Round Number" max_length="40" name="round_number" type="integer"/>
+        <element label="Weapons Ready" max_length="40" name="weapons_ready" type="boolean"/>
+        <element default="true" label="Zombie Alive" max_length="40" name="zombie_alive" type="boolean"/>
+        <element default="4" label="Zombie Detection Distance" max_length="40" name="zombie_detection_distance" read_only="true" type="integer"/>
+    </element>
+</database>

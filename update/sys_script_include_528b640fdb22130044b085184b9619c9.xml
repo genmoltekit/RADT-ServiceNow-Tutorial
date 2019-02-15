@@ -1,32 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <record_update table="sys_script_include">
     <sys_script_include action="INSERT_OR_UPDATE">
-        <access>package_private</access>
+        <access>public</access>
         <active>true</active>
-        <api_name>x_237223_radt_intr.myScriptIncludeLogger</api_name>
-        <client_callable>true</client_callable>
+        <api_name>x_237223_radt_intr.myCustomLoggerViaScriptInclude</api_name>
+        <client_callable>false</client_callable>
         <description>RADT Demo for how to write some JavaScript that can be called from anywhere.  Known in SerivceNow terminology as a 'Script Include'.&#13;
 Script Includes can be either Server-Side only.. (DEFAULT).. or  can additionally be called from the Client Side (uses Custom AJAX Class to accomplish this.)</description>
-        <name>myScriptIncludeLogger</name>
-        <script><![CDATA[function myScriptIncludeLogger (textToLog) {
-	//The name of the function is critical to match here and in the 'name' field directly abov!!
+        <name>myCustomLoggerViaScriptInclude</name>
+        <script><![CDATA[//The name of function this class is critical. Must match the 'Name' field directly above!!
+var myCustomLoggerViaScriptInclude = Class.create();
+
+
+//The following fails. 'jslog' is unknown.  Is it perhaps a custom api and the example on the forum is taken out of context ?
+//jslog ( "#4 myScriptIncludeLogger: Using the built-in jslog() function to log something: " + textToLog);
+
+//The following fails with message: Function log is not allowed in scope x_237223_radt_intr. Use gs.debug() or gs.info() instead
+//gs.log("#4 myScriptIncludeLogger: Using the built-in gs.log() function to log something: " + textToLog);
+
+//gs.debug("#4 myScriptIncludeLogger: Using the built-in gs.log() function to log something: " + textToLog);
+//No obvious Error but not showing up in any of the more obvious System Log Locations...
+//https://docs.servicenow.com/bundle/kingston-application-development/page/script/business-rules/reference/r_DebuggingBusinessRules.html
+// Although technically, this Script Include isnt a Business Rule.. But both are Server Side.
+
+//****************************************************************
+//**  Details About Scoped Logging for Script Includes ets:
+//**  https://developer.servicenow.com/app.do#!/document/content/app_store_doc_scoped_script_kingston_c_ScopedScriptLogging?v=kingston
+//
+//==> To enable session debug logging, click Enable Session Debug under UI Actions; or click Disable Session Debug to turn it off.
+//
+//****************************************************************
+
+
+//Note: Script Includes are ALWAYS Server Side!!   
+//      But they can be called from the Client Side (using the Ajax Processor)
+//      https://docs.servicenow.com/bundle/kingston-application-development/page/script/debugging/concept/c_WritingToTheDebugLog.html
+//      https://docs.servicenow.com/bundle/kingston-application-development/page/script/general-scripting/concept/immediately-invoked-function-expressions.html
+//      https://docs.servicenow.com/bundle/kingston-application-development/page/script/server-scripting/concept/c_UsingGlideRecordToQueryTables.html
+//
+//Note: For some reason, it seems that the gs.error, gs.debug, and gs.warn Logging Functions are unavailable unless the "Accessible From" field 
+//      is not set to "All application scopes."  Is this a bug ?		
+
+myCustomLoggerViaScriptInclude.prototype = {
 	
-    gs.addInfoMessage("#3 myScriptIncludeLogger: You can use the built-in jslog function to log something like: " + textToLog);
-	jslog ( "#4 myScriptIncludeLogger: Using the built-in jslog() function to log something: " + textToLog);
-	//hello comment
-}
-]]></script>
+	type:'myCustomLoggerViaScriptInclude',
+	
+	initialize: function() { 
+		gs.info('myCustomLoggerViaScriptInclude: initializing.. ');
+		//myPrivateVar = "initialized";
+		gs.info('myCustomLoggerViaScriptInclude: initialization complete.. ');
+	},
+	
+	//myPrivateVar: null,
+	
+	logMyStuff: function (textToLog) 
+	{
+		//The name of the function is critical to match here and in the 'name' field directly abov!!
+		gs.error("#3.A Can You see this ERROR message ? Inside ScriptInclude using gs.error");
+		gs.debug("#3.B Can You see this DEBUG message ? Inside ScriptInclude using gs.debug");
+		gs.warn ("#3.C Can You see this WARN  message ? Inside ScriptInclude using gs.warn");
+
+		gs.addInfoMessage("#3.D Can You see this addInfoMessage ? Inside Script Include - Incoming argument: " + textToLog);
+	}
+};]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-06-11 15:58:08</sys_created_on>
         <sys_id>528b640fdb22130044b085184b9619c9</sys_id>
-        <sys_mod_count>7</sys_mod_count>
-        <sys_name>myScriptIncludeLogger</sys_name>
+        <sys_mod_count>35</sys_mod_count>
+        <sys_name>myCustomLoggerViaScriptInclude</sys_name>
         <sys_package display_value="RADT Introduction to Service Now" source="x_237223_radt_intr">d478640bdb22130044b085184b96192a</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="RADT Introduction to Service Now">d478640bdb22130044b085184b96192a</sys_scope>
         <sys_update_name>sys_script_include_528b640fdb22130044b085184b9619c9</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-06-11 17:14:30</sys_updated_on>
+        <sys_updated_on>2018-07-13 17:11:52</sys_updated_on>
     </sys_script_include>
 </record_update>

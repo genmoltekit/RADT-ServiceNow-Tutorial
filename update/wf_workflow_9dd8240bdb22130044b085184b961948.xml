@@ -2,7 +2,7 @@
 <record_update table="wf_workflow_version">
     <wf_workflow_version action="INSERT_OR_UPDATE">
         <active>true</active>
-        <activity_stages>{"activities":{},"ends":["d1d8240bdb22130044b085184b96194b"],"subflows":[],"stages":{}}</activity_stages>
+        <activity_stages>{"ends":["b47705e2db1313007b075385ca961902"],"subflows":[],"stages":{},"activities":{}}</activity_stages>
         <after_business_rules>false</after_business_rules>
         <checked_out/>
         <checked_out_by/>
@@ -10,10 +10,10 @@
         <condition/>
         <condition_type>run_match</condition_type>
         <description>Since Hello World Workflow Example</description>
-        <expected_sequences>d9d8240bdb22130044b085184b961949,90e8644bdb22130044b085184b961917,d1d8240bdb22130044b085184b96194b</expected_sequences>
+        <expected_sequences>307705e2db1313007b075385ca961907,449781e2db1313007b075385ca9619e5,b07705e2db1313007b075385ca961904,387785e2db1313007b075385ca9619cd,3c7705e2db1313007b075385ca961905,b47705e2db1313007b075385ca961902</expected_sequences>
         <expected_time>1970-01-01 14:00:00</expected_time>
         <expected_time_type/>
-        <full_sequences>d9d8240bdb22130044b085184b961949,90e8644bdb22130044b085184b961917,d1d8240bdb22130044b085184b96194b</full_sequences>
+        <full_sequences>307705e2db1313007b075385ca961907,449781e2db1313007b075385ca9619e5,b07705e2db1313007b075385ca961904,387785e2db1313007b075385ca9619cd,3c7705e2db1313007b075385ca961905,b47705e2db1313007b075385ca961902</full_sequences>
         <journal/>
         <max_activity_count>100</max_activity_count>
         <name>RADT Demo Workflow_HelloWorld</name>
@@ -28,16 +28,16 @@
         <schedule/>
         <stage_field/>
         <stage_order>computed</stage_order>
-        <start display_value="Begin">d9d8240bdb22130044b085184b961949</start>
+        <start display_value="Begin">307705e2db1313007b075385ca961907</start>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-06-11 15:42:09</sys_created_on>
-        <sys_id>7598ec0bdb22130044b085184b9619e6</sys_id>
+        <sys_created_on>2018-07-17 11:26:02</sys_created_on>
+        <sys_id>7c77c1e2db1313007b075385ca9619ff</sys_id>
         <sys_mod_count>6</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-06-11 15:46:31</sys_updated_on>
+        <sys_updated_on>2018-07-17 11:29:12</sys_updated_on>
         <table>x_237223_radt_intr_radt_introduction_to_service_now_table</table>
         <timezone/>
-        <validated>true</validated>
+        <validated>false</validated>
         <workflow display_value="RADT Demo Workflow_HelloWorld">9dd8240bdb22130044b085184b961948</workflow>
     </wf_workflow_version>
     <wf_workflow action="INSERT_OR_UPDATE">
@@ -80,21 +80,21 @@
         <pinned_version/>
         <stage/>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-06-11 15:42:09</sys_created_on>
-        <sys_id>d9d8240bdb22130044b085184b961949</sys_id>
+        <sys_created_on>2018-07-17 11:26:02</sys_created_on>
+        <sys_id>307705e2db1313007b075385ca961907</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-06-11 15:42:09</sys_updated_on>
+        <sys_updated_on>2018-07-17 11:26:02</sys_updated_on>
         <timeout>1970-01-01 00:00:00</timeout>
         <vars/>
         <width>80</width>
-        <workflow_version display_value="RADT Demo Workflow_HelloWorld">7598ec0bdb22130044b085184b9619e6</workflow_version>
+        <workflow_version display_value="RADT Demo Workflow_HelloWorld">7c77c1e2db1313007b075385ca9619ff</workflow_version>
         <x>20</x>
         <y>20</y>
     </wf_activity>
-    <sys_variable_value action="delete_multiple" query="document_key=d9d8240bdb22130044b085184b961949"/>
+    <sys_variable_value action="delete_multiple" query="document_key=307705e2db1313007b075385ca961907"/>
     <wf_condition action="INSERT_OR_UPDATE">
-        <activity display_value="Begin">d9d8240bdb22130044b085184b961949</activity>
+        <activity display_value="Begin">307705e2db1313007b075385ca961907</activity>
         <condition>true</condition>
         <condition_default/>
         <condition_type>standard</condition_type>
@@ -108,11 +108,11 @@
         <short_description/>
         <skip_during_generate>false</skip_during_generate>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-06-11 15:42:09</sys_created_on>
-        <sys_id>59d8240bdb22130044b085184b96194a</sys_id>
+        <sys_created_on>2018-07-17 11:26:02</sys_created_on>
+        <sys_id>787705e2db1313007b075385ca961907</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-06-11 15:42:09</sys_updated_on>
+        <sys_updated_on>2018-07-17 11:26:02</sys_updated_on>
     </wf_condition>
     <wf_activity action="INSERT_OR_UPDATE">
         <activity_definition display_value="End">c7a66f7d0a0a0b3a004544a6d2f14076</activity_definition>
@@ -130,19 +130,19 @@
         <pinned_version/>
         <stage/>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-06-11 15:42:09</sys_created_on>
-        <sys_id>d1d8240bdb22130044b085184b96194b</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_created_on>2018-07-17 11:26:02</sys_created_on>
+        <sys_id>b47705e2db1313007b075385ca961902</sys_id>
+        <sys_mod_count>2</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-06-11 15:42:09</sys_updated_on>
+        <sys_updated_on>2018-07-17 11:29:06</sys_updated_on>
         <timeout>1970-01-01 00:00:00</timeout>
         <vars/>
         <width>80</width>
-        <workflow_version display_value="RADT Demo Workflow_HelloWorld">7598ec0bdb22130044b085184b9619e6</workflow_version>
-        <x>400</x>
-        <y>150</y>
+        <workflow_version display_value="RADT Demo Workflow_HelloWorld">7c77c1e2db1313007b075385ca9619ff</workflow_version>
+        <x>1114</x>
+        <y>624</y>
     </wf_activity>
-    <sys_variable_value action="delete_multiple" query="document_key=d1d8240bdb22130044b085184b96194b"/>
+    <sys_variable_value action="delete_multiple" query="document_key=b47705e2db1313007b075385ca961902"/>
     <wf_activity action="INSERT_OR_UPDATE">
         <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
         <activity_definition_updated>false</activity_definition_updated>
@@ -159,51 +159,51 @@
         <pinned_version/>
         <stage/>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-06-11 15:43:13</sys_created_on>
-        <sys_id>90e8644bdb22130044b085184b961917</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_created_on>2018-07-17 11:26:02</sys_created_on>
+        <sys_id>387785e2db1313007b075385ca9619cd</sys_id>
+        <sys_mod_count>2</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-06-11 15:43:26</sys_updated_on>
+        <sys_updated_on>2018-07-17 11:29:03</sys_updated_on>
         <timeout>1970-01-01 00:00:00</timeout>
         <vars/>
         <width/>
-        <workflow_version display_value="RADT Demo Workflow_HelloWorld">7598ec0bdb22130044b085184b9619e6</workflow_version>
-        <x>190</x>
-        <y>45</y>
+        <workflow_version display_value="RADT Demo Workflow_HelloWorld">7c77c1e2db1313007b075385ca9619ff</workflow_version>
+        <x>651</x>
+        <y>354</y>
     </wf_activity>
-    <sys_variable_value action="delete_multiple" query="document_key=90e8644bdb22130044b085184b961917"/>
+    <sys_variable_value action="delete_multiple" query="document_key=387785e2db1313007b075385ca9619cd"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>90e8644bdb22130044b085184b961917</document_key>
+        <document_key>387785e2db1313007b075385ca9619cd</document_key>
         <order>1</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-06-11 15:43:13</sys_created_on>
-        <sys_id>c519e04bdb22130044b085184b961998</sys_id>
+        <sys_created_on>2018-07-17 11:26:02</sys_created_on>
+        <sys_id>bc7785e2db1313007b075385ca9619cd</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-06-11 15:43:13</sys_updated_on>
+        <sys_updated_on>2018-07-17 11:26:02</sys_updated_on>
         <value>gs.addInfoMessage("Hello World -- From Info Message");&#13;
-gs.addErrorMessage("Hello World -- From Error Message")</value>
+gs.addErrorMessage("Hello World -- From Error Message");</value>
         <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>90e8644bdb22130044b085184b961917</document_key>
+        <document_key>387785e2db1313007b075385ca9619cd</document_key>
         <order>1</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-06-11 15:43:13</sys_created_on>
-        <sys_id>c519e04bdb22130044b085184b961998</sys_id>
+        <sys_created_on>2018-07-17 11:26:02</sys_created_on>
+        <sys_id>bc7785e2db1313007b075385ca9619cd</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-06-11 15:43:13</sys_updated_on>
+        <sys_updated_on>2018-07-17 11:26:02</sys_updated_on>
         <value>gs.addInfoMessage("Hello World -- From Info Message");&#13;
-gs.addErrorMessage("Hello World -- From Error Message")</value>
+gs.addErrorMessage("Hello World -- From Error Message");</value>
         <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
     </sys_variable_value>
     <wf_condition action="INSERT_OR_UPDATE">
-        <activity display_value="RADT Demo RunScript_HelloWorld">90e8644bdb22130044b085184b961917</activity>
+        <activity display_value="RADT Demo RunScript_HelloWorld">387785e2db1313007b075385ca9619cd</activity>
         <condition>true</condition>
         <condition_default/>
         <condition_type>standard</condition_type>
@@ -217,47 +217,314 @@ gs.addErrorMessage("Hello World -- From Error Message")</value>
         <short_description/>
         <skip_during_generate>false</skip_during_generate>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-06-11 15:43:13</sys_created_on>
-        <sys_id>8d19284bdb22130044b085184b961936</sys_id>
+        <sys_created_on>2018-07-17 11:26:02</sys_created_on>
+        <sys_id>347785e2db1313007b075385ca9619ce</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-06-11 15:43:13</sys_updated_on>
+        <sys_updated_on>2018-07-17 11:26:02</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Log Message">396807940a0a0b5c00afd9f67d9fd7a2</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>5</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>RADT Demo TraceMessage AFTER</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-07-17 11:26:02</sys_created_on>
+        <sys_id>3c7705e2db1313007b075385ca961905</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-07-17 11:29:04</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="RADT Demo Workflow_HelloWorld">7c77c1e2db1313007b075385ca9619ff</workflow_version>
+        <x>852</x>
+        <y>469</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=3c7705e2db1313007b075385ca961905"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>3c7705e2db1313007b075385ca961905</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-07-17 11:26:02</sys_created_on>
+        <sys_id>bc7705e2db1313007b075385ca961905</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-07-17 11:26:02</sys_updated_on>
+        <value>LogMessageWidget: RADT Demo TraceMessage AFTER</value>
+        <variable display_value="">c35dbd1a0a0a0ba96248a7092864142d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>3c7705e2db1313007b075385ca961905</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-07-17 11:26:02</sys_created_on>
+        <sys_id>bc7705e2db1313007b075385ca961905</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-07-17 11:26:02</sys_updated_on>
+        <value>LogMessageWidget: RADT Demo TraceMessage AFTER</value>
+        <variable display_value="">c35dbd1a0a0a0ba96248a7092864142d</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="RADT Demo TraceMessage AFTER">3c7705e2db1313007b075385ca961905</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-07-17 11:26:02</sys_created_on>
+        <sys_id>b07705e2db1313007b075385ca961906</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-07-17 11:26:02</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Log Message">396807940a0a0b5c00afd9f67d9fd7a2</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>4</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>RADT Demo TraceMessage BEFORE</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-07-17 11:26:02</sys_created_on>
+        <sys_id>b07705e2db1313007b075385ca961904</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-07-17 11:28:45</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="RADT Demo Workflow_HelloWorld">7c77c1e2db1313007b075385ca9619ff</workflow_version>
+        <x>436</x>
+        <y>236</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=b07705e2db1313007b075385ca961904"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>b07705e2db1313007b075385ca961904</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-07-17 11:26:02</sys_created_on>
+        <sys_id>387705e2db1313007b075385ca961904</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-07-17 11:26:02</sys_updated_on>
+        <value>LogMessageWidget: RADT Demo TraceMessage BEFORE</value>
+        <variable display_value="">c35dbd1a0a0a0ba96248a7092864142d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>b07705e2db1313007b075385ca961904</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-07-17 11:26:02</sys_created_on>
+        <sys_id>387705e2db1313007b075385ca961904</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-07-17 11:26:02</sys_updated_on>
+        <value>LogMessageWidget: RADT Demo TraceMessage BEFORE</value>
+        <variable display_value="">c35dbd1a0a0a0ba96248a7092864142d</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="RADT Demo TraceMessage BEFORE">b07705e2db1313007b075385ca961904</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-07-17 11:26:02</sys_created_on>
+        <sys_id>747705e2db1313007b075385ca961905</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-07-17 11:26:02</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Log Message">396807940a0a0b5c00afd9f67d9fd7a2</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>6</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>READ_ME_FIRST  RADT_Demo_Workflow_HelloWorld </name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-07-17 11:28:32</sys_created_on>
+        <sys_id>449781e2db1313007b075385ca9619e5</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-07-17 11:29:01</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="RADT Demo Workflow_HelloWorld">7c77c1e2db1313007b075385ca9619ff</workflow_version>
+        <x>189</x>
+        <y>42</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=449781e2db1313007b075385ca9619e5"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>449781e2db1313007b075385ca9619e5</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-07-17 11:28:32</sys_created_on>
+        <sys_id>d9084da2db1313007b075385ca961984</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-07-17 11:28:32</sys_updated_on>
+        <value>The Debug, Trace, and Error Messages are only visible in the Logs, They will not display on the screen.</value>
+        <variable display_value="">c35dbd1a0a0a0ba96248a7092864142d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>449781e2db1313007b075385ca9619e5</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-07-17 11:28:32</sys_created_on>
+        <sys_id>d9084da2db1313007b075385ca961984</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-07-17 11:28:32</sys_updated_on>
+        <value>The Debug, Trace, and Error Messages are only visible in the Logs, They will not display on the screen.</value>
+        <variable display_value="">c35dbd1a0a0a0ba96248a7092864142d</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="READ_ME_FIRST  RADT_Demo_Workflow_HelloWorld ">449781e2db1313007b075385ca9619e5</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-07-17 11:28:32</sys_created_on>
+        <sys_id>d1084da2db1313007b075385ca961985</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-07-17 11:28:32</sys_updated_on>
     </wf_condition>
     <wf_transition action="INSERT_OR_UPDATE">
-        <condition display_value="Always">59d8240bdb22130044b085184b96194a</condition>
-        <from display_value="Begin">d9d8240bdb22130044b085184b961949</from>
+        <condition display_value="Always">b07705e2db1313007b075385ca961906</condition>
+        <from display_value="RADT Demo TraceMessage AFTER">3c7705e2db1313007b075385ca961905</from>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-06-11 15:43:20</sys_created_on>
-        <sys_id>2a19e04bdb22130044b085184b9619b5</sys_id>
+        <sys_created_on>2018-07-17 11:26:02</sys_created_on>
+        <sys_id>387785e2db1313007b075385ca9619cf</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-06-11 15:43:20</sys_updated_on>
-        <to display_value="RADT Demo RunScript_HelloWorld">90e8644bdb22130044b085184b961917</to>
+        <sys_updated_on>2018-07-17 11:26:02</sys_updated_on>
+        <to display_value="End">b47705e2db1313007b075385ca961902</to>
     </wf_transition>
     <wf_transition action="INSERT_OR_UPDATE">
-        <condition display_value="Always">8d19284bdb22130044b085184b961936</condition>
-        <from display_value="RADT Demo RunScript_HelloWorld">90e8644bdb22130044b085184b961917</from>
+        <condition display_value="Always">747705e2db1313007b075385ca961905</condition>
+        <from display_value="RADT Demo TraceMessage BEFORE">b07705e2db1313007b075385ca961904</from>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-06-11 15:43:21</sys_created_on>
-        <sys_id>7619644bdb22130044b085184b961926</sys_id>
+        <sys_created_on>2018-07-17 11:26:02</sys_created_on>
+        <sys_id>707785e2db1313007b075385ca9619cf</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-06-11 15:43:21</sys_updated_on>
-        <to display_value="End">d1d8240bdb22130044b085184b96194b</to>
+        <sys_updated_on>2018-07-17 11:26:02</sys_updated_on>
+        <to display_value="RADT Demo RunScript_HelloWorld">387785e2db1313007b075385ca9619cd</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">d1084da2db1313007b075385ca961985</condition>
+        <from display_value="READ_ME_FIRST  RADT_Demo_Workflow_HelloWorld ">449781e2db1313007b075385ca9619e5</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-07-17 11:28:54</sys_created_on>
+        <sys_id>761805e2db1313007b075385ca96192d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-07-17 11:28:54</sys_updated_on>
+        <to display_value="RADT Demo TraceMessage BEFORE">b07705e2db1313007b075385ca961904</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">787705e2db1313007b075385ca961907</condition>
+        <from display_value="Begin">307705e2db1313007b075385ca961907</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-07-17 11:28:52</sys_created_on>
+        <sys_id>da1801e2db1313007b075385ca961963</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-07-17 11:28:52</sys_updated_on>
+        <to display_value="READ_ME_FIRST  RADT_Demo_Workflow_HelloWorld ">449781e2db1313007b075385ca9619e5</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">347785e2db1313007b075385ca9619ce</condition>
+        <from display_value="RADT Demo RunScript_HelloWorld">387785e2db1313007b075385ca9619cd</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-07-17 11:26:02</sys_created_on>
+        <sys_id>f87785e2db1313007b075385ca9619cf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-07-17 11:26:02</sys_updated_on>
+        <to display_value="RADT Demo TraceMessage AFTER">3c7705e2db1313007b075385ca961905</to>
     </wf_transition>
     <wf_estimated_runtime_config action="INSERT_OR_UPDATE">
         <estimated_run_time/>
         <no_of_data_points>1</no_of_data_points>
         <percentage_threshold_ert>20</percentage_threshold_ert>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-06-11 15:42:09</sys_created_on>
-        <sys_id>91d8240bdb22130044b085184b961948</sys_id>
+        <sys_created_on>2018-07-17 11:26:02</sys_created_on>
+        <sys_id>707705e2db1313007b075385ca961900</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-06-11 15:42:09</sys_updated_on>
-        <workflow_version display_value="RADT Demo Workflow_HelloWorld">7598ec0bdb22130044b085184b9619e6</workflow_version>
+        <sys_updated_on>2018-07-17 11:26:02</sys_updated_on>
+        <workflow_version display_value="RADT Demo Workflow_HelloWorld">7c77c1e2db1313007b075385ca9619ff</workflow_version>
     </wf_estimated_runtime_config>
-    <wf_workflow_version action="update_multiple" query="workflow=9dd8240bdb22130044b085184b961948^sys_id!=7598ec0bdb22130044b085184b9619e6">
+    <wf_workflow_version action="update_multiple" query="workflow=9dd8240bdb22130044b085184b961948^sys_id!=7c77c1e2db1313007b075385ca9619ff">
         <published>false</published>
     </wf_workflow_version>
 </record_update>

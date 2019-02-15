@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="wf_workflow_version">
+    <wf_workflow_version action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <activity_stages>{"ends":["da14d1aadb1313007b075385ca96199b"],"subflows":[],"stages":{},"activities":{}}</activity_stages>
+        <after_business_rules>false</after_business_rules>
+        <checked_out/>
+        <checked_out_by/>
+        <column_renderer display_value="Workflow-driven">a56213111b030100adca1e094f0713ac</column_renderer>
+        <condition/>
+        <condition_type>run_match</condition_type>
+        <description>The subflow in this DEMO which receives input from the Parent and can return output back to the Parent.</description>
+        <expected_sequences>1614d1aadb1313007b075385ca96199c,de14d1aadb1313007b075385ca96199c,da14d1aadb1313007b075385ca96199b</expected_sequences>
+        <expected_time>1970-01-01 14:00:00</expected_time>
+        <expected_time_type/>
+        <full_sequences>1614d1aadb1313007b075385ca96199c,de14d1aadb1313007b075385ca96199c,da14d1aadb1313007b075385ca96199b</full_sequences>
+        <journal/>
+        <max_activity_count>100</max_activity_count>
+        <name>RADT Demo Workflow_SubflowDataPassing_TheChild</name>
+        <not_cacheable>false</not_cacheable>
+        <on_cancel><![CDATA[// This script executes if the workflow is cancelled.// The global variable context_sys_id contains the sys_id of the cancelled workflow context.]]></on_cancel>
+        <order>100</order>
+        <pin_type>set_by_activity</pin_type>
+        <published>true</published>
+        <relative_duration display_value="2 business days by 4pm">3bf802c20a0a0b52008e2859cd8abcf2</relative_duration>
+        <requires_ert>true</requires_ert>
+        <run_multiple>false</run_multiple>
+        <schedule/>
+        <stage_field/>
+        <stage_order>computed</stage_order>
+        <start display_value="Begin">1614d1aadb1313007b075385ca96199c</start>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-07-17 12:21:18</sys_created_on>
+        <sys_id>d614d1aadb1313007b075385ca96199a</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-07-17 12:43:15</sys_updated_on>
+        <table>x_237223_radt_intr_radt_introduction_to_subflows</table>
+        <timezone/>
+        <validated>false</validated>
+        <workflow display_value="RADT Demo Workflow_SubflowDataPassing_TheChild">c453996adb1313007b075385ca96192a</workflow>
+    </wf_workflow_version>
+    <wf_workflow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <description>The subflow in this DEMO which receives input from the Parent and can return output back to the Parent.</description>
+        <name>RADT Demo Workflow_SubflowDataPassing_TheChild</name>
+        <preview/>
+        <sys_class_name>wf_workflow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-07-17 12:17:52</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c453996adb1313007b075385ca96192a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>RADT Demo Workflow_SubflowDataPassing_TheChild</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="RADT Introduction to Service Now" source="x_237223_radt_intr">d478640bdb22130044b085184b96192a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="RADT Introduction to Service Now">d478640bdb22130044b085184b96192a</sys_scope>
+        <sys_update_name>wf_workflow_c453996adb1313007b075385ca96192a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-07-17 12:18:17</sys_updated_on>
+        <table>x_237223_radt_intr_radt_introduction_to_subflows</table>
+        <template>false</template>
+        <vars/>
+    </wf_workflow>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Begin">c7a5e32c0a0a0b3a002377c24ed8ea76</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>1</databus_lookup_id>
+        <height/>
+        <input/>
+        <is_parent>false</is_parent>
+        <name>Begin</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-07-17 12:21:18</sys_created_on>
+        <sys_id>1614d1aadb1313007b075385ca96199c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-07-17 12:21:18</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width>80</width>
+        <workflow_version display_value="RADT Demo Workflow_SubflowDataPassing_TheChild">d614d1aadb1313007b075385ca96199a</workflow_version>
+        <x>20</x>
+        <y>20</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=1614d1aadb1313007b075385ca96199c"/>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Begin">1614d1aadb1313007b075385ca96199c</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-07-17 12:21:18</sys_created_on>
+        <sys_id>5a14d1aadb1313007b075385ca96199c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-07-17 12:21:18</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="End">c7a66f7d0a0a0b3a004544a6d2f14076</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>2</databus_lookup_id>
+        <height/>
+        <input/>
+        <is_parent>false</is_parent>
+        <name>End</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-07-17 12:21:18</sys_created_on>
+        <sys_id>da14d1aadb1313007b075385ca96199b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-07-17 12:21:18</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width>80</width>
+        <workflow_version display_value="RADT Demo Workflow_SubflowDataPassing_TheChild">d614d1aadb1313007b075385ca96199a</workflow_version>
+        <x>356</x>
+        <y>148</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=da14d1aadb1313007b075385ca96199b"/>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Log Message">396807940a0a0b5c00afd9f67d9fd7a2</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>3</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>SUBFLOW_READ_ME_1</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-07-17 12:21:18</sys_created_on>
+        <sys_id>de14d1aadb1313007b075385ca96199c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-07-17 12:21:18</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="RADT Demo Workflow_SubflowDataPassing_TheChild">d614d1aadb1313007b075385ca96199a</workflow_version>
+        <x>162</x>
+        <y>53</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=de14d1aadb1313007b075385ca96199c"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>de14d1aadb1313007b075385ca96199c</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-07-17 12:21:18</sys_created_on>
+        <sys_id>d214d1aadb1313007b075385ca96199d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-07-17 12:21:18</sys_updated_on>
+        <value>Info on preparing a subflow to recieve input from ParentFlow.  https://docs.servicenow.com/bundle/jakarta-servicenow-platform/page/administer/workflow-activities/task/t_VariableWorkflowSubflow.html</value>
+        <variable display_value="">c35dbd1a0a0a0ba96248a7092864142d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>de14d1aadb1313007b075385ca96199c</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-07-17 12:21:18</sys_created_on>
+        <sys_id>d214d1aadb1313007b075385ca96199d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-07-17 12:21:18</sys_updated_on>
+        <value>Info on preparing a subflow to recieve input from ParentFlow.  https://docs.servicenow.com/bundle/jakarta-servicenow-platform/page/administer/workflow-activities/task/t_VariableWorkflowSubflow.html</value>
+        <variable display_value="">c35dbd1a0a0a0ba96248a7092864142d</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="SUBFLOW_READ_ME_1">de14d1aadb1313007b075385ca96199c</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-07-17 12:21:18</sys_created_on>
+        <sys_id>d614d1aadb1313007b075385ca96199d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-07-17 12:21:18</sys_updated_on>
+    </wf_condition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">d614d1aadb1313007b075385ca96199d</condition>
+        <from display_value="SUBFLOW_READ_ME_1">de14d1aadb1313007b075385ca96199c</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-07-17 12:21:18</sys_created_on>
+        <sys_id>1a14d1aadb1313007b075385ca96199e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-07-17 12:21:18</sys_updated_on>
+        <to display_value="End">da14d1aadb1313007b075385ca96199b</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">5a14d1aadb1313007b075385ca96199c</condition>
+        <from display_value="Begin">1614d1aadb1313007b075385ca96199c</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-07-17 12:21:18</sys_created_on>
+        <sys_id>1e14d1aadb1313007b075385ca96199e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-07-17 12:21:18</sys_updated_on>
+        <to display_value="SUBFLOW_READ_ME_1">de14d1aadb1313007b075385ca96199c</to>
+    </wf_transition>
+    <var_dictionary action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes/>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label>Child Flow Input - Integer</column_label>
+        <comments/>
+        <create_roles/>
+        <default_value>-1</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>u_child_flow_input_-_integer</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Integer">integer</internal_type>
+        <label>Child Flow Input - Integer</label>
+        <mandatory>true</mandatory>
+        <max_length>40</max_length>
+        <model_id>c453996adb1313007b075385ca96192a</model_id>
+        <model_table>wf_workflow</model_table>
+        <name>var__m_var_dictionary_c453996adb1313007b075385ca96192a</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>var_dictionary</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-07-17 12:40:07</sys_created_on>
+        <sys_id>a89659eadb1313007b075385ca9619e7</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Child Flow Input - Integer</sys_name>
+        <sys_package display_value="RADT Introduction to Service Now" source="x_237223_radt_intr">d478640bdb22130044b085184b96192a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="RADT Introduction to Service Now">d478640bdb22130044b085184b96192a</sys_scope>
+        <sys_update_name>var_dictionary_a89659eadb1313007b075385ca9619e7</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-07-17 12:41:07</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </var_dictionary>
+    <sys_documentation element="u_child_flow_input_-_integer" language="en" table="var__m_var_dictionary_c453996adb1313007b075385ca96192a">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_child_flow_input_-_integer</element>
+            <help/>
+            <hint/>
+            <label>Child Flow Input - Integer</label>
+            <language>en</language>
+            <name>var__m_var_dictionary_c453996adb1313007b075385ca96192a</name>
+            <plural>Child Flow Input - Integer</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-07-17 12:40:07</sys_created_on>
+            <sys_id>866815aadb1313007b075385ca9619d7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Child Flow Input - Integer</sys_name>
+            <sys_package display_value="RADT Introduction to Service Now" source="x_237223_radt_intr">d478640bdb22130044b085184b96192a</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="RADT Introduction to Service Now">d478640bdb22130044b085184b96192a</sys_scope>
+            <sys_update_name>sys_documentation_var__m_var_dictionary_c453996adb1313007b075385ca96192a_u_child_flow_input_-_integer_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-07-17 12:40:07</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+    <wf_estimated_runtime_config action="INSERT_OR_UPDATE">
+        <estimated_run_time/>
+        <no_of_data_points>1</no_of_data_points>
+        <percentage_threshold_ert>20</percentage_threshold_ert>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-07-17 12:21:18</sys_created_on>
+        <sys_id>5a14d1aadb1313007b075385ca96199a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-07-17 12:21:18</sys_updated_on>
+        <workflow_version display_value="RADT Demo Workflow_SubflowDataPassing_TheChild">d614d1aadb1313007b075385ca96199a</workflow_version>
+    </wf_estimated_runtime_config>
+    <wf_workflow_version action="update_multiple" query="workflow=c453996adb1313007b075385ca96192a^sys_id!=d614d1aadb1313007b075385ca96199a">
+        <published>false</published>
+    </wf_workflow_version>
+</record_update>
